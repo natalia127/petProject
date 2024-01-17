@@ -16,7 +16,7 @@ export function App() {
                 <Navbar />
                 <div className="content-page">
                   <Sidebar />
-                  <AppRouter />
+                         <AppRouter />
               </div>
             </Suspense>
       </div>

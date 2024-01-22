@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "ESNext",
@@ -16,7 +17,10 @@
   },
   "ts-node": {
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "CommonJS"
     }
   },
+  "include": [
+    "./config/jest/setup-jest.ts"
+  ]
 }

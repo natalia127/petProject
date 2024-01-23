@@ -8,7 +8,7 @@ import path from 'path';
 export default {
   preset: 'ts-jest',
   clearMocks: true,
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   coveragePathIgnorePatterns: [
     '\\\\node_modules\\\\',
   ],
@@ -36,6 +36,9 @@ export default {
     '\\.s?css$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
   },
+  // jest:{
+  //   testEnvironment: "jsdom"
+  // }
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 

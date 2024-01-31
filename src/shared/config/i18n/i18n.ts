@@ -5,16 +5,17 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(Backend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    fallbackLng: 'ru',
-    debug: _IS_DEV_,
+    .use(Backend)
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+        fallbackLng: 'ru',
+        // eslint-disable-next-line no-undef
+        debug: _IS_DEV_,
 
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
-  });
+        interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+        },
+    });
 
 export default i18n;

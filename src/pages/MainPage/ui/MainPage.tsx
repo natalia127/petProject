@@ -2,14 +2,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function MainPage() {
-  const { t } = useTranslation('main');
+    const { t } = useTranslation('main');
 
-  return (
+    return (
         <div>
-          {t('Главная страница')}
+            {t('Главная страница')}
 
-      </div>
-  );
+        </div>
+    );
 }
 
 export default MainPage;

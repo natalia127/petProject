@@ -1,5 +1,5 @@
 import { NotFound } from 'pages/NotFound/ui/NotFound';
 
 export {
-  NotFound as NotFoundPage,
+    NotFound as NotFoundPage,
 };

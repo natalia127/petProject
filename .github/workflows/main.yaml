@@ -9,7 +9,7 @@ on:
       - master
 jobs:
   pipeline:
-    runs-on: ubuntu-lest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]

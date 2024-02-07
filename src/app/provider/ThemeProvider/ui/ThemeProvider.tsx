@@ -6,7 +6,7 @@ interface InputProps {
   children: React.ReactElement;
 }
 const ThemeProvider: FC<InputProps> = ({ children }) => {
-    const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT;
+    const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || 'light';
 
     const [theme, setTheme] = useState<Theme>(defaultTheme);
     const defaultProps = useMemo(() => ({
